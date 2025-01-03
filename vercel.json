@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "Movies/wsgi.py",
+        "src": "NetFace/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
@@ -20,7 +20,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "Movies/wsgi.py"
+        "dest": "NetFace/wsgi.py"
       }
     ],
     "outputDirectory": "static"
